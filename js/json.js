@@ -18,8 +18,11 @@ async function populate() {
   const responseJson = await response.json();
   // STEP 8: Output the iScream JSON object to the console
   console.log(responseJson);
+
   // STEP 9a: Invoke the populateHeader function here, then build it below
+  populateHeader();
   // STEP 10a: Invoke the showTopFlavors function here, then build it below
+  showTopFlavours();
 }
 
 // STEP 3b: Call the populate() function
@@ -60,7 +63,7 @@ function showTopFlavours(jsonBody) {
     h2.textContent = topFlavours[i].name;
     p1.textContent = `Calories: ${topFlavours[i].calories}`;
     p2.textContent = `Type: ${topFlavours[i].type}`;
-
+    image.setAttribute("src", topFlavours[i].image);
     // STEP 10g: Build a loop for the ingredients array in the JSON
 
     // STEP 10i: Append each complete ARTICLE element to the SECTION element
