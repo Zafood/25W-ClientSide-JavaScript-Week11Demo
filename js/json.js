@@ -3,24 +3,17 @@ const header = document.querySelector("header");
 const section = document.querySelector("section");
 
 // STEP 3a: Create the asynchronous function populate()
-
-// Introducing JavaScript Object Notation (JSON): https://json.org/
-// STEP 4a: Create i-scream.json file with companyName, headOffice, established, active, topFlavors(name, calories, type, ingredients, image) */
-// STEP 4b: Store the URL of a JSON file in a variable */
-
-// STEP 5: Use the new URL to create a new request object
-
-// STEP 6: Make a network request with the fetch() function, which returns a Response object
-
-// STEP 7: Capture the returned Response object and covert to a JSON object using json()
-
-// STEP 8: Output the iScream JSON object to the console 
-
-// STEP 9a: Invoke the populateHeader function here, then build it below
-
-// STEP 10a: Invoke the showTopFlavors function here, then build it below
-
-
+function populate() {
+  // Introducing JavaScript Object Notation (JSON): https://json.org/
+  // STEP 4a: Create i-scream.json file with companyName, headOffice, established, active, topFlavors(name, calories, type, ingredients, image) */
+  // STEP 4b: Store the URL of a JSON file in a variable */
+  // STEP 5: Use the new URL to create a new request object
+  // STEP 6: Make a network request with the fetch() function, which returns a Response object
+  // STEP 7: Capture the returned Response object and covert to a JSON object using json()
+  // STEP 8: Output the iScream JSON object to the console
+  // STEP 9a: Invoke the populateHeader function here, then build it below
+  // STEP 10a: Invoke the showTopFlavors function here, then build it below
+}
 
 // STEP 3b: Call the populate() function
 
@@ -36,7 +29,6 @@ const section = document.querySelector("section");
 
 // STEP 10c: Bind the JSON topFlavors object to a var
 
-
 // STEP 10d: Loop through the topFlavors object
 
 // STEP 10e: build HTML elements for the content: article, h2, image, p1, p2, list
@@ -46,7 +38,6 @@ const section = document.querySelector("section");
 // STEP 10g: Build a loop for the ingredients array in the JSON
 
 // STEP 10i: Append each complete ARTICLE element to the SECTION element
-
 
 // STEP 11: Add a 3rd flavour of ice cream to the local JSON file, making use of the /images/strawberry-sprinkle.svg image
 
