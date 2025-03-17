@@ -12,7 +12,7 @@ async function populate() {
   // STEP 5: Use the new URL to create a new request object
   const request = new Request(url);
   // STEP 6: Make a network request with the fetch() function, which returns a Response object
-  const response = request.fetch(request);
+  const response = response.fetch(request);
   console.log(response);
   // STEP 7: Capture the returned Response object and covert to a JSON object using json()
   const responseJson = await response.json();
@@ -24,13 +24,17 @@ async function populate() {
 
 // STEP 3b: Call the populate() function
 populate();
+
 /* STEP 9b: Build out the populateHeader() function */
-
-// Create the H1 element
-
-// Grab the company name from the JSON object and use it for the text node
-
-// Inject the complete H1 element into the DOM, inside the HEADER
+function populateHeder(jsonBody) {
+  console.log(jsonBody);
+  // Create the H1 element
+  let h1 = document.createElement("h1"); // <h1></h1>
+  // Grab the company name from the JSON object and use it for the text node
+  h1.textContent = jsonBody.companyName;
+  // Inject the complete H1 element into the DOM, inside the HEADER
+  header.appendChild = h1;
+}
 
 /* STEP 10b: Assemble the showTopFlavors() function */
 
