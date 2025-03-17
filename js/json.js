@@ -12,7 +12,7 @@ async function populate() {
   // STEP 5: Use the new URL to create a new request object
   const request = new Request(url);
   // STEP 6: Make a network request with the fetch() function, which returns a Response object
-  const response = response.fetch(request);
+  const response = request.fetch(request);
   console.log(response);
   // STEP 7: Capture the returned Response object and covert to a JSON object using json()
   const responseJson = await response.json();
